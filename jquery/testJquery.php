@@ -6,7 +6,8 @@
     <title>BibliothequeJS</title>
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+
     <!-- Bootstrap JS et Popper.js CDN (order is important) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
@@ -35,12 +36,30 @@
         </nav>
     </header>
     <main>
+        <button type="button" id="btn1" class="btn btn-primary">btn1</button>
+        <p class="" id='p1'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Fuga qui itaque harum perferendis tempore esse iste eos, ex iure quaerat accusamus
+             recusandae quod maxime at ipsum illo deserunt totam nulla!</p><br>
+             <label for="">Test</label>
 
     </main>
     <footer>
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-
+    <script>
+        $("#btn1").click(function() {
+            // alert("Bouton cliqué !");
+            // $("#p1").addClass("p1");
+            // $("#p1").fadeOut();
+            // $("#p1").fadeToggle();
+            $("#p1").fadeTo("slow", 0.5);
+            // $("#p1").fadeOut();
+            // $("#p1").fadeOut();
+            // $("#p1").fadeOut();
+            // $("#p1").fadeOut();
+            // $("#p1").fadeOut();
+        });
+    </script>
 </body>
 </html>
